@@ -7,3 +7,15 @@
     4. Переходим к 1 пункту.
 
 """
+try:
+    a, b = int(input('a: ')), int(input('b: '))
+except ValueError:
+    print('enter a namber')
+
+while a != 0 and b != 0:
+    if a > b:
+        a = a % b
+        print(a)
+    elif b > a:
+        b = b % a
+        print(b)
